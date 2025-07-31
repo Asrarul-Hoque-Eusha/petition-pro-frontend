@@ -8,7 +8,7 @@ const Login: React.FC = () => {
     e.preventDefault();
     console.log("Username:", username);
     console.log("Password:", password);
-    // Add your login logic here
+    
   };
 
   return (
