@@ -1,7 +1,9 @@
-import { Check, FileText, Shield, Settings, Users, BarChart3, Eye, Laptop } from 'lucide-react';
+import { Check, FileText, Shield, BarChart3, Laptop } from 'lucide-react';
+import { Element } from 'react-scroll';
 
 const PetitionProPortals = () => {
   return (
+    <Element name='about'>
     <div className="bg-white py-16 px-4">
       <div className="max-w-7xl mx-auto">
         
@@ -184,6 +186,7 @@ const PetitionProPortals = () => {
         
       </div>
     </div>
+    </Element>
   );
 }
 

@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import { BarChart3, Clock, Zap, User, Calendar, TrendingUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Element } from 'react-scroll';
+
 
 const LandingSection = () => {
   const [hoveredFeature, setHoveredFeature] = useState("");
@@ -16,6 +19,7 @@ const LandingSection = () => {
   ];
 
   return (
+    <Element name='home'>
     <div className="min-h-screen bg-gradient-to-br from-purple-100 via-blue-50 to-indigo-100 relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-purple-200 rounded-full -translate-x-48 -translate-y-48 opacity-60"></div>
@@ -37,12 +41,14 @@ const LandingSection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            <Link to="/login" 
+            className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
               Start Drafting
-            </button>
-            <button className="border-2 border-gray-300 hover:border-blue-500 text-gray-700 hover:text-blue-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 bg-white hover:bg-blue-50">
+            </Link>
+            <Link to="/login"
+            className="border-2 border-gray-300 hover:border-blue-500 text-gray-700 hover:text-blue-500 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 bg-white hover:bg-blue-50">
               Try It Free
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -201,6 +207,7 @@ const LandingSection = () => {
         </div>
       </div>
     </div>
+    </Element>
   );
 }
 

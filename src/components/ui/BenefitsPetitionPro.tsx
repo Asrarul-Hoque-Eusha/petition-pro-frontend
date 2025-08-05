@@ -1,4 +1,5 @@
 import { Clock, DollarSign, Edit3, Users, Shield, UserCheck } from 'lucide-react';
+import { Element } from 'react-scroll';
 
 const BenefitsPetitionPro = () => {
   const benefits = [
@@ -35,6 +36,7 @@ const BenefitsPetitionPro = () => {
   ];
 
   return (
+    <Element name='benefits'>
     <div className="bg-blue-100 py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
@@ -73,6 +75,7 @@ const BenefitsPetitionPro = () => {
         </div>
       </div>
     </div>
+    </Element>
   );
 }
 

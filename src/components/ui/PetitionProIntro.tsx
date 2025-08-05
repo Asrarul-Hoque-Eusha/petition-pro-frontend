@@ -1,7 +1,9 @@
 import { Check } from 'lucide-react';
+import { Element } from 'react-scroll';
 
 const PetitionProIntro = () => {
   return (
+    <Element name='how-it-works'>
     <div className="min-h-screen bg-gray-50 py-12 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
@@ -92,6 +94,7 @@ const PetitionProIntro = () => {
         </div>
       </div>
     </div>
+    </Element>
   );
 }
 

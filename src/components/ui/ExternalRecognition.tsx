@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Sparkles, RotateCcw, Plus } from 'lucide-react';
-
+import { Element } from 'react-scroll';
 const ExternalRecognitions: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(true);
 
@@ -14,6 +14,7 @@ const ExternalRecognitions: React.FC = () => {
   ];
 
   return (
+    <Element name="external-recognition">
     <div className='flex-1 p-8 justify-center items-center bg-gray-50'>
     <div className='max-w-4xl mx-auto w-full my-8'>
     <div className="bg-white rounded-lg border hover:border-blue-200 border-gray-200 p-6">
@@ -58,6 +59,7 @@ const ExternalRecognitions: React.FC = () => {
     </div>
     </div>
     </div>
+    </Element>
   );
 };
 

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Check } from 'lucide-react';
+import { Element } from 'react-scroll';
 
 const PetitionProPricing = () => {
   const [isAttorney, setIsAttorney] = useState(false);
@@ -53,6 +54,7 @@ const PetitionProPricing = () => {
   ];
 
   return (
+    <Element name='pricing'>
     <div className="bg-white py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
@@ -150,7 +152,8 @@ const PetitionProPricing = () => {
           ))}
         </div>
       </div>
-    </div>
+      </div>
+    </Element>
   );
 }
 

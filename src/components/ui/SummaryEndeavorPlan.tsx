@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Sparkles } from 'lucide-react';
+import { Element } from 'react-scroll';
 
 const SummaryEndeavorPlan: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(true);
 
   return (
+    <Element name='summary-endeavor-plan'>
     <div className='justify-center items-center bg-gray-50 flex-1 p-8'>
         <div className='max-w-4xl mx-auto w-full'>
     <div className="bg-white rounded-lg border border-gray-200 hover:border-blue-200 p-6 mb-6">
@@ -49,6 +51,7 @@ const SummaryEndeavorPlan: React.FC = () => {
     </div>
     </div>
     </div>
+    </Element>
   );
 };
 
