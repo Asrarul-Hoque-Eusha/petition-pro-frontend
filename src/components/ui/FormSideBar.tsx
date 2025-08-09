@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { User, Star, Award, FileText } from "lucide-react"; 
 import { Link } from "react-scroll";
-//import {Link} from 'react-router-dom';
 
   const sidebarItems = [
     { id: 'Basic Details', icon: User, label: 'Basic Details', link: 'basic-details' },

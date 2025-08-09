@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const GetStarted = () => {
   return (
@@ -15,9 +16,10 @@ const GetStarted = () => {
         
         {/* CTA Button */}
         <div className="mb-4">
-          <button className="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200">
+          <Link to='/login'
+           className="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200">
             Try It Free
-          </button>
+          </Link>
         </div>
         
         {/* No Credit Card Text */}

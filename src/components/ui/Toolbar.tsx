@@ -1,6 +1,5 @@
 import { Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
 
 import UserMenu from './UserMenu';
 
@@ -8,7 +7,7 @@ const Toolbar = () => {
 
   return (
     /* Header */
-    <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4">
+    <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white sticky top-0 z-50 px-6 py-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-6">
           <div className="flex items-center space-x-2">
@@ -20,10 +19,11 @@ const Toolbar = () => {
               <span>Petition Builder</span>
               <Sparkles className="w-4 h-4" />
             </Link>
-            <ScrollLink to="pricing" smooth={true} duration={350} className="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg hover:bg-white/20 transition-colors">
+            <Link to="/#pricing"
+            className="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg hover:bg-white/20 transition-colors">
               <span>Pricing</span>
               <Sparkles className="w-4 h-4" />
-            </ScrollLink>
+            </Link>
           </div>
         </div>
         {/* <div className="flex items-center space-x-2">

@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Element } from 'react-scroll';
 
 const PetitionProIntro = () => {
@@ -18,9 +19,10 @@ const PetitionProIntro = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+            <Link to='/register'
+            className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-medium transition-colors">
               Join for Free
-            </button>
+            </Link>
             <button className="bg-white hover:bg-gray-50 text-gray-700 px-8 py-3 rounded-lg font-medium border border-gray-300 transition-colors">
               Learn More
             </button>

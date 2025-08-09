@@ -47,19 +47,20 @@ const UserPortal = () => {
           </button>
         </div>
         </div>
+
+
         <div className="flex items-start justify-center max-w-7xl mx-auto p-4">
         {/* Sidebar */}
-        <aside className="w-82 sticky top-5">
+        <aside className="w-82 sticky top-22">
             <FormSideBar />
         </aside>
 
         {/* Main Content */}
-        <main className="flex-1 max-w-4xl ml-6 space-y-6">
+        <main className="flex-1 justify-center items-center max-w-4xl ml-6 space-y-3">
             {/* BasicDetails gets full width */}
             <section className="w-full">
             <BasicDetails />
             </section>
-            {/* Other components get similar constraints */}
             <section>
             <Achievements />
             </section>
@@ -69,10 +70,12 @@ const UserPortal = () => {
             <section>
             <ExternalRecognitions />
             </section>
-            <button type='submit' onClick={handleFullFormSubmit}
-            className='max-w-3xl bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors'>
-              Mark All Complete
-            </button>
+            <div className="flex justify-center">
+              <button type='submit' onClick={handleFullFormSubmit}
+              className=' bg-blue-600 w-2xl text-white font px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors'>
+                Submit
+              </button>
+            </div>
         </main>
         </div>
 

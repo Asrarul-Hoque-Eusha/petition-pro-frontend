@@ -71,13 +71,13 @@ const LandingSection = () => {
                 <div className="flex gap-3 mb-4">
                   <input
                     type="text"
-                    readOnly
+                    disabled = {true}
                     placeholder="Search here"
                     className="flex-1 p-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
-                  <button className="bg-yellow-400 hover:bg-yellow-500 px-6 py-3 rounded-lg font-semibold transition-colors">
+                  <span className="bg-yellow-400 hover:bg-yellow-500 px-6 py-3 rounded-lg font-semibold transition-colors">
                     Submit
-                  </button>
+                  </span>
                 </div>
                 
                 <div className="w-full bg-blue-500 rounded-full h-2 mb-4">

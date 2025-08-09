@@ -15,9 +15,9 @@ const ExternalRecognitions: React.FC = () => {
 
   return (
     <Element name="external-recognition">
-    <div className='flex-1 p-8 justify-center items-center bg-gray-50'>
-    <div className='max-w-4xl mx-auto w-full my-8'>
-    <div className="bg-white rounded-lg border hover:border-blue-200 border-gray-200 p-6">
+    <div className='flex-1 px-8 py-2 justify-center items-center bg-gray-50'>
+    <div className='max-w-4xl mx-auto w-full'>
+    <div className="bg-white rounded-lg border hover:border-blue-200 border-gray-200 px-6 py-2">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-xl font-semibold text-gray-900">External Recognitions</h2>
         <button 

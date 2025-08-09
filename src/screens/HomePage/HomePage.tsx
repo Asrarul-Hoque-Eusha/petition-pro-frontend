@@ -1,4 +1,6 @@
-//import Toolbar from "../../components/ui/Toolbar";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import Footer from "../../components/ui/Footer";
 import LandingSection from "../../components/ui/LandingSection";
 import GetStarted from "../../components/ui/GetStarted";
@@ -10,6 +12,17 @@ import Navbar from "../../components/ui/NavbarAnonymous";
 
 
 const HomePage = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+        const element = document.querySelector(location.hash);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+        }
+    }, [location]);
+    
     return (
         <div className="min-h-screen ">
         <Navbar />
@@ -17,7 +30,9 @@ const HomePage = () => {
         <PetitionProIntro />
         <BenefitsPetitionPro />
         <PetitionProPortals />
+        <section id="pricing">
         <PetitionProPricing />
+        </section>
         <GetStarted />
         <Footer />
         </div>

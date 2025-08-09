@@ -7,9 +7,9 @@ const SummaryEndeavorPlan: React.FC = () => {
 
   return (
     <Element name='summary-endeavor-plan'>
-    <div className='justify-center items-center bg-gray-50 flex-1 p-8'>
+    <div className='justify-center items-center bg-gray-50 flex-1 px-8 py-2'>
         <div className='max-w-4xl mx-auto w-full'>
-    <div className="bg-white rounded-lg border border-gray-200 hover:border-blue-200 p-6 mb-6">
+    <div className="bg-white rounded-lg border border-gray-200 hover:border-blue-200 px-6 py-3">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-xl font-semibold text-gray-900">Summary, Endeavor and Plan</h2>
         <button 

@@ -8,11 +8,11 @@ const Navbar = () => {
 
   const handleJoinClick = () => {
     // Navigate to login page - you can replace this with your routing logic
-    window.location.href = '/login';
+    window.location.href = '/register';
   };
 
   return (
-    <nav className="w-full sticky top-0 z-50 bg-white border-b border-gray-200 px-6 py-4">
+    <nav className="w-full sticky top-0 z-50 bg-white border-b border-gray-300 px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
